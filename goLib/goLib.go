@@ -28,52 +28,48 @@ typedef struct { void* array; intgo len; intgo cap; } _goslice_;
 
 
 
-#cgo LDFLAGS: -L/. -llibadd
+#cgo LDFLAGS: -L./ -llibadd
 #include "add.h"
 
-extern void _wrap_Swig_free_goLib_063e9d32b171c593(uintptr_t arg1);
-extern uintptr_t _wrap_Swig_malloc_goLib_063e9d32b171c593(swig_intgo arg1);
-extern swig_intgo _wrap_add_goLib_063e9d32b171c593(swig_intgo arg1, swig_intgo arg2);
+extern void _wrap_Swig_free_goLib_7052626fa2a6d2bc(uintptr_t arg1);
+extern uintptr_t _wrap_Swig_malloc_goLib_7052626fa2a6d2bc(swig_intgo arg1);
+extern swig_intgo _wrap_add_goLib_7052626fa2a6d2bc(swig_intgo arg1, swig_intgo arg2);
 #undef intgo
 */
 import "C"
 
-import "unsafe"
-import _ "runtime/cgo"
-import "sync"
-
+import (
+	_ "runtime/cgo"
+	"sync"
+	"unsafe"
+)
 
 type _ unsafe.Pointer
-
-
 
 var Swig_escape_always_false bool
 var Swig_escape_val interface{}
 
-
 type _swig_fnptr *byte
 type _swig_memberptr *byte
 
-
-func getSwigcptr(v interface { Swigcptr() uintptr }) uintptr {
+func getSwigcptr(v interface{ Swigcptr() uintptr }) uintptr {
 	if v == nil {
 		return 0
 	}
 	return v.Swigcptr()
 }
 
-
 type _ sync.Mutex
 
 func Swig_free(arg1 uintptr) {
 	_swig_i_0 := arg1
-	C._wrap_Swig_free_goLib_063e9d32b171c593(C.uintptr_t(_swig_i_0))
+	C._wrap_Swig_free_goLib_7052626fa2a6d2bc(C.uintptr_t(_swig_i_0))
 }
 
 func Swig_malloc(arg1 int) (_swig_ret uintptr) {
 	var swig_r uintptr
 	_swig_i_0 := arg1
-	swig_r = (uintptr)(C._wrap_Swig_malloc_goLib_063e9d32b171c593(C.swig_intgo(_swig_i_0)))
+	swig_r = (uintptr)(C._wrap_Swig_malloc_goLib_7052626fa2a6d2bc(C.swig_intgo(_swig_i_0)))
 	return swig_r
 }
 
@@ -81,8 +77,6 @@ func Add(arg1 int, arg2 int) (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (int)(C._wrap_add_goLib_063e9d32b171c593(C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
+	swig_r = (int)(C._wrap_add_goLib_7052626fa2a6d2bc(C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
 	return swig_r
 }
-
-

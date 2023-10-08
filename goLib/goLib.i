@@ -4,7 +4,7 @@
 %}
 %insert(cgo_comment_typedefs)
 %{
-#cgo LDFLAGS: -L/. -llibadd
+#cgo LDFLAGS: -L./ -llibadd
 #include "add.h"
 %}
 %include "add.h"

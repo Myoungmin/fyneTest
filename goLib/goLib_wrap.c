@@ -178,7 +178,7 @@ static void* Swig_malloc(int c) {
 extern "C" {
 #endif
 
-void _wrap_Swig_free_goLib_063e9d32b171c593(void *_swig_go_0) {
+void _wrap_Swig_free_goLib_7052626fa2a6d2bc(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -188,7 +188,7 @@ void _wrap_Swig_free_goLib_063e9d32b171c593(void *_swig_go_0) {
 }
 
 
-void *_wrap_Swig_malloc_goLib_063e9d32b171c593(intgo _swig_go_0) {
+void *_wrap_Swig_malloc_goLib_7052626fa2a6d2bc(intgo _swig_go_0) {
   int arg1 ;
   void *result = 0 ;
   void *_swig_go_result;
@@ -201,7 +201,7 @@ void *_wrap_Swig_malloc_goLib_063e9d32b171c593(intgo _swig_go_0) {
 }
 
 
-intgo _wrap_add_goLib_063e9d32b171c593(intgo _swig_go_0, intgo _swig_go_1) {
+intgo _wrap_add_goLib_7052626fa2a6d2bc(intgo _swig_go_0, intgo _swig_go_1) {
   int arg1 ;
   int arg2 ;
   int result;
